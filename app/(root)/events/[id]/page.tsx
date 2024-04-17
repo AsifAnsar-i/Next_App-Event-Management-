@@ -47,15 +47,16 @@ const EventDetails = async ({
                 </div>
 
                 <p className="p-medium-18 ml-2 mt-2 sm:mt-0">
-                  by{" "}
+                  by
                   <span className="text-primary-500">
-                    {event.organizer.firstName} {event.organizer.lastName}
+                    {event.organizer.firstName}
+                    <span>{event.organizer.lastName}</span>
                   </span>
                 </p>
               </div>
             </div>
 
-            <CheckoutButton event={event}/> 
+            <CheckoutButton event={event} />
 
             <div className="flex flex-col gap-5">
               <div className="flex gap-2 md:gap-3">
@@ -67,11 +68,11 @@ const EventDetails = async ({
                 />
                 <div className="p-medium-16 lg:p-regular-20 flex flex-wrap items-center">
                   <p>
-                    {formatDateTime(event.startDateTime).dateOnly} -{" "}
+                    {formatDateTime(event.startDateTime).dateOnly}
                     {formatDateTime(event.startDateTime).timeOnly}
                   </p>
                   <p>
-                    {formatDateTime(event.endDateTime).dateOnly} -{" "}
+                    {formatDateTime(event.endDateTime).dateOnly}
                     {formatDateTime(event.endDateTime).timeOnly}
                   </p>
                 </div>
