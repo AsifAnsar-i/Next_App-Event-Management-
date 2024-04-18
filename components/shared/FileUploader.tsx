@@ -38,18 +38,18 @@ const FileUploader: React.FC<FileUploaderProps> = ({
       <input {...getInputProps()} className="cursor-pointer" />
 
       {imageUrl ? (
-         <div className="flex h-full w-full flex-1 justify-center ">
-         <Image
-           src={imageUrl}
-           alt="image"
-           width={250}
-           height={250}
-           className="w-full object-cover object-center"
-         />
-       </div>
+        <div className="flex h-full w-full flex-1 justify-center ">
+          <Image
+            src={imageUrl}
+            alt="image"
+            width={250}
+            height={250}
+            className="w-full object-cover object-center"
+          />
+        </div>
       ) : (
         <div className="flex-center flex-col py-5 text-grey-500">
-          <img
+          <Image
             src="/assets/icons/upload.svg"
             width={77}
             height={77}
