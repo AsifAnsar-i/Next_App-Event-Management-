@@ -47,10 +47,9 @@ const EventDetails = async ({
                 </div>
 
                 <p className="p-medium-18 ml-2 mt-2 sm:mt-0">
-                  by{"\u0020"}
+                  by
                   <span className="text-primary-500">
-                    {event.organizer.firstName}{"\u0020"}
-                    <span>{event.organizer.lastName}</span>
+                    {event.organizer.firstName}
                   </span>
                 </p>
               </div>
